@@ -1,0 +1,14 @@
+{
+  "name": "week-3",
+  "version": "1.0.0",
+  "description": "week 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "author": "jb",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
