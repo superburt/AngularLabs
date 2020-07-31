@@ -3,9 +3,17 @@ var app = express();
 var http = require("http").Server(app); //used to provide http functionality
 app.use(express.static(__dirname + "/www"));
 
-let server = http.listen(3000, function () {
+let server = http.listen(3001, function () {
     let host = server.address().address;
     let port = server.address().port;
     console.log('My First Nodejs Server!');
     console.log("Server listening on: "+ host + " port:" + port);
 });
+module.exports = function(app,path){
+    // app passes in the express object needed for the route.
+    // path passes in a path object needed to find the file. The path module is part of node and needs to be required in the server.js file
+    app.get('/mypage',function(req,res){
+    let filepath = path.resolve('./www/mypage.html');
+    res.sendFile(filepath);
+    });
+    }
