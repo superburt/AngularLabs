@@ -17,3 +17,7 @@ module.exports = function(app,path){
     res.sendFile(filepath);
     });
     }
+
+app.get("/test", function (req, res) {
+res.sendFile(__dirname + "/www/test.html");
+});
