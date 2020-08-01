@@ -6,3 +6,9 @@ module.exports = function(app,path){
     res.sendFile(filepath);
     });
 }
+const express = require('express')
+const app = express()
+
+app.use(express.urlencoded({
+  extended: true
+}))
