@@ -4,9 +4,9 @@ var path = require('path');
 var http = require("http").Server(app); //used to provide http functionality
 app.use(express.static(__dirname + "/www"));
 require("./routes/account.js")(app,path);
-require("./routes/login.js")(app,path);
+require("./routes/form.js")(app,path);
 
-let server = http.listen(3002, function () {
+let server = http.listen(3000, function () {
     let host = server.address().address;
     let port = server.address().port;
     console.log('My First Nodejs Server!');
