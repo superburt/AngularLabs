@@ -2,8 +2,9 @@ var express = require("express"); //used for routing
 var app = express();
 var http = require("http").Server(app); //used to provide http functionality
 app.use(express.static(__dirname + "/www"));
+require("./routes/accountroute.js")(app,path);
 
-let server = http.listen(3001, function () {
+let server = http.listen(3002, function () {
     let host = server.address().address;
     let port = server.address().port;
     console.log('My First Nodejs Server!');
