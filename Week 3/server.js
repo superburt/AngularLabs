@@ -16,8 +16,11 @@ let server = http.listen(3000, function () {
 });
 app.get("/form", function (req, res) {
     res.sendFile(__dirname + "/www/form.html");
-    });
+});
 
+app.get("/account", function (req, res) {
+    res.sendFile(__dirname + "/www/account.html");
+    });
 
 app.post('api/login/',function(req,res){
     if (!req.body) {
