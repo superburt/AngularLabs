@@ -11,19 +11,18 @@ import { AppRoutingModule } from './app-routing.module';
   styleUrls: ['./app.component.css']
 })
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    TestComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: []
-  bootstrap: [AppComponent]
-})
+// @NgModule({
+//   declarations: [
+//     AppComponent,
+//   ],
+//   imports: [
+//     BrowserModule,
+//     AppRoutingModule,
+//     FormsModule
+//   ],
+//   providers: [],
+//   bootstrap: [AppComponent]
+// })
 
 export class AppComponent {
   title = 'week4';
